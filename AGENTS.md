@@ -49,8 +49,8 @@ Use `notes/_template.md` as the structure. Every committed note must include the
    - **Title** — title of the article/thread
 2. **Long summary** — faithful overview of the source
 3. **Key claims** — bullet list of the main points asserted
-4. **References** — URLs from or about the source, kept and grouped when documenting expected shape (e.g. X source / Docs / GitHub / HF / Other). Do not drop referenced URLs.
-5. **Actionables** — concrete, source-derived follow-ups for a general reader (or `N/A`). Do not personalize for a named person.
+4. **Actionables** — concrete, source-derived follow-ups for a general reader (or `N/A`). Do not personalize for a named person.
+5. **References** — URLs from or about the source, kept and grouped when documenting expected shape (e.g. X source / Docs / GitHub / HF / Other). Do not drop referenced URLs.
 
 Do not invent claims, references, or actionables that are not supported by the source.
 

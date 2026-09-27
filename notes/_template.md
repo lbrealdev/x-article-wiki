@@ -15,6 +15,11 @@ Faithful overview of what the source says. Do not invent content. Copy names, nu
 - Claim supported by the source
 - Another claim supported by the source
 
+## Actionables
+
+- Concrete follow-up implied by the source for a general reader (or `N/A`)
+- Do not personalize for a named person
+
 ## References
 
 ### X source
@@ -38,8 +43,3 @@ Faithful overview of what the source says. Do not invent content. Copy names, nu
 - https://example.com/related (as referenced in the source)
 
 Omit empty groups. Keep all references from the source.
-
-## Actionables
-
-- Concrete follow-up implied by the source for a general reader (or `N/A`)
-- Do not personalize for a named person
