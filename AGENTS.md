@@ -64,7 +64,7 @@ Do not invent claims, references, or actionables that are not supported by the s
 ## PR expectations
 
 - One PR per note when practical (small related batches are OK)
-- Title/body should name the source and say whether this is a new note or an update
+- Title follows Conventional Commits (see below); body should name the source URL and note path
 - Keep the diff limited to the note file(s) plus any unavoidable metadata
 - If extraction fails mid-work, close out without committing invented content
 
@@ -72,15 +72,22 @@ Do not invent claims, references, or actionables that are not supported by the s
 
 Use [Conventional Commits](https://www.conventionalcommits.org/) for commit messages and PR titles.
 
-Common types for this repo:
+For **new or updated notes**:
 
-- `docs:` — new or updated notes, or changes to the note contract (`AGENTS.md`, README guidance)
-- `chore:` — templates, meta, tooling, and non-content scaffolding (e.g. GitHub issue/PR templates)
+- `docs(article): <article title>` — source is an X article
+- `docs(thread): <thread subject>` — source is a thread
+- Do **not** put `@handle` in the title; author belongs only in the note Source block
+
+For **other changes**:
+
+- `docs(contract):` — note contract / agent guidance (`AGENTS.md`, section rules)
+- `chore:` — templates, meta, tooling, and non-content scaffolding
 
 Examples:
 
-- `docs: add note on shipping better agents`
-- `docs: update note contract for References order`
+- `docs(article): Shipping Better Agents`
+- `docs(thread): Notes on long-context evals`
+- `docs(contract): put References after Actionables`
 - `chore: add pull request and issue templates`
 
-Keep the subject line short; put detail in the body when needed. Do not invent types for this wiki beyond what fits the change.
+Keep the subject line short; put detail in the body when needed.
