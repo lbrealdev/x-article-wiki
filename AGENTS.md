@@ -50,7 +50,14 @@ Use `notes/_template.md` as the structure. Every committed note must include the
 2. **Long summary** — faithful overview of the source
 3. **Key claims** — bullet list of the main points asserted
 4. **Actionables** — concrete, source-derived follow-ups for a general reader (or `N/A`). Do not personalize for a named person.
-5. **References** — URLs from or about the source, kept and grouped when documenting expected shape (e.g. X source / Docs / GitHub / HF / Other). Do not drop referenced URLs.
+5. **References** — destination URLs a reader can open for real content (docs, GitHub repos, Hugging Face, product pages, blogs, and canonical X URLs — status or `https://x.com/i/article/...` — when they belong in References). Group when documenting expected shape (e.g. X source / Docs / GitHub / HF / Other).
+
+   **Do not** put in References:
+   - X/Twitter shorteners (`t.co`, `https://t.co/...`)
+   - Raw media / CDN asset URLs (`pbs.twimg.com`, `.jpg`, `.png`, `.gif`, `.webp`, video/media CDN paths)
+   - Tracking or redirect junk that is not a readable page
+
+   If the source has no useful references beyond what is already in **Source**, use `N/A` under `## References` (or omit empty groups). Do not pad with media or shorteners.
 
 Do not invent claims, references, or actionables that are not supported by the source.
 
