@@ -1,8 +1,8 @@
-# x-article-wiki
+# x-notes
 
 Notes from X articles and threads.
 
-This repo is a small public wiki of knowledge notes extracted from X (Twitter) articles and long threads. Each note captures one source so the content stays easy to review, search, and update over time.
+This repo is a small public collection of knowledge notes extracted from X (Twitter) articles and long threads. Each note captures one source so the content stays easy to review, search, and update over time.
 
 ## What lives here
 
