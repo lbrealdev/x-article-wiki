@@ -42,7 +42,7 @@ Example: `notes/2026-09-15-shipping-better-agents.md`
 Use `notes/_template.md` as the structure. Every committed note must include these sections (use `N/A` only when a section truly does not apply after successful extraction):
 
 1. **Source** — single section with:
-   - **Author** — X username of the post/article author (`@handle`)
+   - **Author** — X username of the post/article author as a clickable link: `[@handle](https://x.com/handle)` (bare `@handle` is not a link in GitHub markdown)
    - **Article/Post** — canonical X URL (primary attribution). When both a status/share URL and an X article URL exist, this **must** be the `https://x.com/i/article/...` URL
    - **Status** — optional; the status/share URL (`https://x.com/.../status/...`) when it differs from Article/Post
    - **Date** — publication or extraction date (`YYYY-MM-DD`)
