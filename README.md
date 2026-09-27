@@ -8,7 +8,7 @@ This repo is a small public wiki of knowledge notes extracted from X (Twitter) a
 
 - One markdown note per X article or thread
 - Notes are added and updated through pull requests
-- Agents (notably **X Article Forge**) open those PRs after extracting content from a source URL
+- Agents open those PRs after extracting content from a source URL
 
 ## Layout
 

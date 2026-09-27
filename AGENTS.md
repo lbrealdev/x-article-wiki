@@ -1,6 +1,6 @@
 # Agent contract: adding notes
 
-This repo stores knowledge notes extracted from X (Twitter) articles and long threads. Agents (especially **X Article Forge**) may open pull requests that add or update notes. Follow this contract exactly.
+This repo stores knowledge notes extracted from X (Twitter) articles and long threads. Agents may open pull requests that add or update notes. Follow this contract exactly.
 
 ## When to create a PR
 
@@ -41,22 +41,21 @@ Example: `notes/2026-09-15-shipping-better-agents.md`
 
 Use `notes/_template.md` as the structure. Every committed note must include these sections (use `N/A` only when a section truly does not apply after successful extraction):
 
-1. **Source** — canonical X URL
-2. **Date** — publication or extraction date (`YYYY-MM-DD`)
-3. **Title** — title of the article/thread
-4. **Long summary** — faithful overview of the source
-5. **Key claims** — bullet list of the main points asserted
-6. **Links** — URLs referenced in the source (if any)
-7. **Actionables** — concrete follow-ups implied by the source (if any)
+1. **Source** — canonical X URL (primary attribution)
+2. **Author** — X username of the post/article author (`@handle`)
+3. **Date** — publication or extraction date (`YYYY-MM-DD`)
+4. **Title** — title of the article/thread
+5. **Long summary** — faithful overview of the source
+6. **Key claims** — bullet list of the main points asserted
+7. **Links** — URLs referenced in the source (if any)
+8. **Actionables** — concrete follow-ups implied by the source (if any)
 
 Do not invent claims, links, or actionables that are not supported by the source.
 
 ## Content rules
 
-- Write committed docs in English
 - Summarize; do not paste the full source verbatim unless needed for a short quote
 - No PII, credentials, API keys, session tokens, or private account details
-- No third-party “inspired by” credits, promotional shout-outs, or unrelated attribution in committed text
 - Stay faithful to the source; mark uncertainty instead of fabricating detail
 
 ## PR expectations
