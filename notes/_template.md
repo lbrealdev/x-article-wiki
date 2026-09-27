@@ -1,6 +1,7 @@
 # Source
 
-- Author: @handle
+<!-- Author: use [@handle](https://x.com/handle) so it is clickable; bare @handle is not a link. -->
+- Author: [@handle](https://x.com/handle)
 - Article/Post: https://x.com/i/article/... (use article URL when both status and article exist)
 - Status: https://x.com/.../status/... (optional; only when it differs from Article/Post)
 - Date: YYYY-MM-DD
@@ -14,6 +15,11 @@ Faithful overview of what the source says. Do not invent content. Copy names, nu
 
 - Claim supported by the source
 - Another claim supported by the source
+
+## Actionables
+
+- Concrete follow-up implied by the source for a general reader (or `N/A`)
+- Do not personalize for a named person
 
 ## References
 
@@ -38,8 +44,3 @@ Faithful overview of what the source says. Do not invent content. Copy names, nu
 - https://example.com/related (as referenced in the source)
 
 Omit empty groups. Keep all references from the source.
-
-## Actionables
-
-- Concrete follow-up implied by the source for a general reader (or `N/A`)
-- Do not personalize for a named person

@@ -42,15 +42,15 @@ Example: `notes/2026-09-15-shipping-better-agents.md`
 Use `notes/_template.md` as the structure. Every committed note must include these sections (use `N/A` only when a section truly does not apply after successful extraction):
 
 1. **Source** — single section with:
-   - **Author** — X username of the post/article author (`@handle`)
+   - **Author** — X username of the post/article author as a clickable link: `[@handle](https://x.com/handle)` (bare `@handle` is not a link in GitHub markdown)
    - **Article/Post** — canonical X URL (primary attribution). When both a status/share URL and an X article URL exist, this **must** be the `https://x.com/i/article/...` URL
    - **Status** — optional; the status/share URL (`https://x.com/.../status/...`) when it differs from Article/Post
    - **Date** — publication or extraction date (`YYYY-MM-DD`)
    - **Title** — title of the article/thread
 2. **Long summary** — faithful overview of the source
 3. **Key claims** — bullet list of the main points asserted
-4. **References** — URLs from or about the source, kept and grouped when documenting expected shape (e.g. X source / Docs / GitHub / HF / Other). Do not drop referenced URLs.
-5. **Actionables** — concrete, source-derived follow-ups for a general reader (or `N/A`). Do not personalize for a named person.
+4. **Actionables** — concrete, source-derived follow-ups for a general reader (or `N/A`). Do not personalize for a named person.
+5. **References** — URLs from or about the source, kept and grouped when documenting expected shape (e.g. X source / Docs / GitHub / HF / Other). Do not drop referenced URLs.
 
 Do not invent claims, references, or actionables that are not supported by the source.
 
@@ -64,6 +64,30 @@ Do not invent claims, references, or actionables that are not supported by the s
 ## PR expectations
 
 - One PR per note when practical (small related batches are OK)
-- Title/body should name the source and say whether this is a new note or an update
+- Title follows Conventional Commits (see below); body should name the source URL and note path
 - Keep the diff limited to the note file(s) plus any unavoidable metadata
 - If extraction fails mid-work, close out without committing invented content
+
+## Conventional Commits
+
+Use [Conventional Commits](https://www.conventionalcommits.org/) for commit messages and PR titles.
+
+For **new or updated notes**:
+
+- `docs(article): <article title>` — source is an X article
+- `docs(thread): <thread subject>` — source is a thread
+- Do **not** put `@handle` in the title; author belongs only in the note Source block
+
+For **other changes**:
+
+- `docs(contract):` — note contract / agent guidance (`AGENTS.md`, section rules)
+- `chore:` — templates, meta, tooling, and non-content scaffolding
+
+Examples:
+
+- `docs(article): Shipping Better Agents`
+- `docs(thread): Notes on long-context evals`
+- `docs(contract): put References after Actionables`
+- `chore: add pull request and issue templates`
+
+Keep the subject line short; put detail in the body when needed.
