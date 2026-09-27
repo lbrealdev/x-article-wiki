@@ -13,4 +13,5 @@
 - [ ] Title is `docs(article): …` or `docs(thread): …` (no `@handle` in the title)
 - [ ] Article/Post prefers the `https://x.com/i/article/...` URL when both article and status exist
 - [ ] Required sections in order; **References** last (after Actionables)
+- [ ] **References** only readable destination URLs (no `t.co`, media/CDN assets, or tracking junk); `N/A` or omit empty groups when nothing useful beyond Source
 - [ ] Names, numbers, and product/model labels match the source exactly

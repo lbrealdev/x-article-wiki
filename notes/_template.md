@@ -23,9 +23,11 @@ Faithful overview of what the source says. Do not invent content. Copy names, nu
 
 ## References
 
+<!-- Only readable destination URLs (docs, GitHub, HF, product/blog pages, canonical X status or article URLs). Omit t.co shorteners, pbs.twimg.com / raw image-video CDN assets, and tracking/redirect junk. If nothing useful beyond Source, use N/A (or omit empty groups). -->
+
 ### X source
 
-- https://x.com/i/article/... (and/or related X URLs from the source)
+- https://x.com/i/article/... (and/or related canonical X URLs from the source)
 
 ### Docs
 
@@ -43,4 +45,4 @@ Faithful overview of what the source says. Do not invent content. Copy names, nu
 
 - https://example.com/related (as referenced in the source)
 
-Omit empty groups. Keep all references from the source.
+Omit empty groups. Do not pad with media or shorteners. Use `N/A` when there are no useful references beyond Source.
