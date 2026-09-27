@@ -27,7 +27,7 @@ Mental model: VRAM ≈ B x (bits ÷ 8), then adjust for runtime overhead, KV cac
 
 ## Key claims
 
-- VRAM (in GB) ≈ Parameters (in billions) × (effective bits per weight ÷ 8) explains FP16 / BF16, FP8 / INT8, GPTQ / AWQ / NF4, GGUF variants, and similar formats.
+- VRAM (in GB) ≈ Parameters (in billions) x (effective bits per weight ÷ 8) explains FP16 / BF16, FP8 / INT8, GPTQ / AWQ / NF4, GGUF variants, and similar formats.
 - FP16 / BF16 ≈ 2 GB per 1B params; FP8 / INT8 ≈ 1 GB per 1B; 4-bit ≈ 0.5 GB per 1B; GGUF Q6_K / Q5_K / Q4_K / Q3_K / Q2_K ≈ 0.82 / 0.69 / 0.56 / 0.43 / 0.33 GB per 1B.
 - Model weights are only part of VRAM: KV cache, activations, batching/concurrency, framework overhead (Transformers, vLLM, TensorRT-LLM, llama.cpp), and CUDA Graphs also consume memory.
 - Example weight footprints: 7B ~14 / ~7 / ~3.5–4 GB; 13B ~26 / ~13 / ~6–7 GB; 70B ~140 / ~70 / ~35–40 GB; 405B ~810 / ~405 / ~200+ GB (FP16 / FP8 / 4-bit).
@@ -38,7 +38,7 @@ Mental model: VRAM ≈ B x (bits ÷ 8), then adjust for runtime overhead, KV cac
 
 ## Actionables
 
-- Size local LLM VRAM with VRAM ≈ Parameters (billions) × (effective bits per weight ÷ 8), using FP16≈2× / FP8≈1× / 4-bit≈0.5× as the baseline.
+- Size local LLM VRAM with VRAM ≈ Parameters (billions) x (effective bits per weight ÷ 8), using FP16 = 2x / FP8 = 1x / 4-bit = 0.5x as the baseline.
 - Budget beyond weights: include KV cache, activations, batching/concurrency, and framework overhead; add at least 10–30% headroom, and more for 32K/128K+ context, high concurrency, or agent workloads.
 - For MoE models, plan memory from total parameters (and loading/sharding of experts), not from active parameters alone.
 - Treat GGUF “fits in N GB” figures as llama.cpp-runtime-specific; re-check memory when moving weights into other frameworks that may dequantize.
