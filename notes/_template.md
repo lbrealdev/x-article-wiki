@@ -1,20 +1,9 @@
-# Title of the article or thread
+# Source
 
-## Source
-
-https://x.com/...
-
-## Author
-
-@handle
-
-## Date
-
-YYYY-MM-DD
-
-## Title
-
-Title of the article or thread
+- Author: @handle
+- Article/Post: https://x.com/...
+- Date: YYYY-MM-DD
+- Title: Title of the article or thread
 
 ## Long summary
 

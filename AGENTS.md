@@ -41,14 +41,15 @@ Example: `notes/2026-09-15-shipping-better-agents.md`
 
 Use `notes/_template.md` as the structure. Every committed note must include these sections (use `N/A` only when a section truly does not apply after successful extraction):
 
-1. **Source** — canonical X URL (primary attribution)
-2. **Author** — X username of the post/article author (`@handle`)
-3. **Date** — publication or extraction date (`YYYY-MM-DD`)
-4. **Title** — title of the article/thread
-5. **Long summary** — faithful overview of the source
-6. **Key claims** — bullet list of the main points asserted
-7. **Links** — URLs referenced in the source (if any)
-8. **Actionables** — concrete follow-ups implied by the source (if any)
+1. **Source** — single section with:
+   - **Author** — X username of the post/article author (`@handle`)
+   - **Article/Post** — canonical X URL (primary attribution)
+   - **Date** — publication or extraction date (`YYYY-MM-DD`)
+   - **Title** — title of the article/thread
+2. **Long summary** — faithful overview of the source
+3. **Key claims** — bullet list of the main points asserted
+4. **Links** — URLs referenced in the source (if any)
+5. **Actionables** — concrete follow-ups implied by the source (if any)
 
 Do not invent claims, links, or actionables that are not supported by the source.
 
