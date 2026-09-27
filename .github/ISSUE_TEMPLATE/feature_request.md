@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Suggest an improvement for the wiki, notes contract, or future HTML gallery
+about: Suggest an improvement for the notes or the contract in AGENTS.md
 title: "[feat] "
 labels: enhancement
 ---
@@ -11,7 +11,7 @@ What would you like to add or change?
 
 ## Motivation
 
-Why does this help the knowledge wiki (notes, searchability, review, or a future HTML gallery)?
+Why does this help the markdown notes under `notes/` (one note per X article or thread; contract in `AGENTS.md`)?
 
 ## Proposal
 
