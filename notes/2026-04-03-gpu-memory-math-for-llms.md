@@ -45,11 +45,4 @@ Mental model: VRAM ≈ B x (bits ÷ 8), then adjust for runtime overhead, KV cac
 
 ## References
 
-### X source
-
-- https://x.com/TheAhmadOsman/status/2040103488714068245
-- https://t.co/sF6qq5uIXK
-
-### Other
-
-- https://pbs.twimg.com/media/HE_nHXmWwAAEshI.jpg
+N/A
