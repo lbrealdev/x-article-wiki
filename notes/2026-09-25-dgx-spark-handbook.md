@@ -1,13 +1,14 @@
 # Source
 
-- Author: @exolabs
-- Article/Post: https://x.com/exolabs/status/2103617535765573959
+- Author: [@exolabs](https://x.com/exolabs)
+- Article/Post: https://x.com/i/article/2103600009191079936
+- Status: https://x.com/exolabs/status/2103617535765573959
 - Date: 2026-09-25
 - Title: DGX Spark Handbook
 
 ## Long summary
 
-Handbook on running local LLM inference on NVIDIA DGX Spark (“golden brick”) boxes—quiet, low-power, 128 GB memory machines aimed at home/office use. Article body credits writing to @0xSero (reviewers @alexocheema and @alexzfunk; special thanks @MiaAI_lab). Related article URL: https://x.com/i/article/2103600009191079936.
+Handbook on running local LLM inference on NVIDIA DGX Spark (“golden brick”) boxes—quiet, low-power, 128 GB memory machines aimed at home/office use. Article body credits writing to [@0xSero](https://x.com/0xSero) (reviewers [@alexocheema](https://x.com/alexocheema) and [@alexzfunk](https://x.com/alexzfunk); special thanks [@MiaAI_lab](https://x.com/MiaAI_lab)).
 
 Early skepticism focused on Spark’s ~273 GB/s memory bandwidth (far below an RTX 5090’s ~1,792 GB/s). The piece argues that smaller capable models, MoE, and speculative decoding now let Sparks feel cloud-parity for single-user tokens/s: cloud GPUs are faster but shared and tuned for cost/token; at home the box is all yours.
 
@@ -34,36 +35,6 @@ Advanced: Spark is weak at decode (memory-bound) but strong at prefill (compute-
 - Spark’s strength for research is prefill/reading (quantize, prune, eval, long context), not decode; author moved pruning/EXL3/benchmarking onto Sparks and reserved faster GPUs for serving.
 - GB10 (Spark) and data-center GB300 share the Grace Blackwell design family enough that software patterns transfer; Spark GPU compute capability is sm_121.
 
-## Links
-
-- https://x.com/exolabs/status/2103617535765573959
-- https://x.com/i/article/2103600009191079936
-- https://www.nvidia.com/en-us/products/workstations/dgx-spark/
-- https://docs.nvidia.com/dgx/dgx-spark/spark-clustering.html
-- https://developer.nvidia.com/blog/scaling-autonomous-ai-agents-and-workloads-with-nvidia-dgx-spark/
-- https://build.nvidia.com/spark
-- https://build.nvidia.com/spark/speculative-decoding
-- https://build.nvidia.com/spark/multi-sparks-through-switch
-- https://github.com/NVIDIA/dgx-spark-playbooks/tree/main/nvidia/dgx-dashboard
-- https://github.com/MiaAI-Lab
-- https://github.com/MiaAI-Lab/sparkDash
-- https://github.com/MiaAI-Lab/sparkring
-- https://github.com/0xSero/local-ai-registry
-- https://github.com/local-inference-lab/b12x
-- https://github.com/CerebrasResearch/reap
-- https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4
-- https://huggingface.co/Qwen/Qwen3.6-35B-A3B
-- https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
-- https://huggingface.co/zai-org/GLM-5.3-Flash
-- https://developer.nvidia.com/blog/introducing-nvfp4-for-efficient-and-accurate-low-precision-inference/
-- https://blog.exolabs.net/nvidia-dgx-spark/
-- https://www.servethehome.com/nvidia-dgx-spark-review-the-gb10-machine-is-so-freaking-cool/4/
-- https://videocardz.com/newz/nvidia-officially-raises-dgx-spark-founders-edition-msrp-to-4699
-- https://www.exxactcorp.com/blog/deep-learning/what-you-need-to-build-a-4x-nvidia-dgx-spark-cluster-switch-cabling-power
-- https://inferencex.semianalysis.com/inference/qwen-3-8-flash-next
-- https://x.com/MiaAI_lab
-- https://x.com/0xSero
-
 ## Actionables
 
 - If evaluating local Spark inference: buy one GB10 box (prefer ~4 TB SSD), run Qwen3.6-35B via NVIDIA’s LM Studio playbook first, then move to a MiaAI Lab / local-ai-registry recipe (vLLM/SGLang) for speed and multi-agent serving.
@@ -72,3 +43,45 @@ Advanced: Spark is weak at decode (memory-bound) but strong at prefill (compute-
 - Stand Sparks on their sides with airflow space; set up Tailscale for remote access; join Discord/Reddit/X communities for debugging.
 - Only add a third/fourth Spark (triangle or MikroTik 200 GbE switch / switchless ring) if you need largest models or multi-model concurrency; pin SparkRing versions if using switchless four-Spark rings (alpha).
 - For research workflows: use Sparks for prefill-heavy jobs (quantize, REAP prune, eval, long-context checks) and keep faster discrete GPUs for interactive decode if available.
+
+## References
+
+### X source
+
+- https://x.com/MiaAI_lab
+- https://x.com/0xSero
+
+### Docs
+
+- https://docs.nvidia.com/dgx/dgx-spark/spark-clustering.html
+- https://build.nvidia.com/spark
+- https://build.nvidia.com/spark/speculative-decoding
+- https://build.nvidia.com/spark/multi-sparks-through-switch
+
+### GitHub
+
+- https://github.com/NVIDIA/dgx-spark-playbooks/tree/main/nvidia/dgx-dashboard
+- https://github.com/MiaAI-Lab
+- https://github.com/MiaAI-Lab/sparkDash
+- https://github.com/MiaAI-Lab/sparkring
+- https://github.com/0xSero/local-ai-registry
+- https://github.com/local-inference-lab/b12x
+- https://github.com/CerebrasResearch/reap
+
+### HF
+
+- https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4
+- https://huggingface.co/Qwen/Qwen3.6-35B-A3B
+- https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
+- https://huggingface.co/zai-org/GLM-5.3-Flash
+
+### Other
+
+- https://www.nvidia.com/en-us/products/workstations/dgx-spark/
+- https://developer.nvidia.com/blog/scaling-autonomous-ai-agents-and-workloads-with-nvidia-dgx-spark/
+- https://developer.nvidia.com/blog/introducing-nvfp4-for-efficient-and-accurate-low-precision-inference/
+- https://blog.exolabs.net/nvidia-dgx-spark/
+- https://www.servethehome.com/nvidia-dgx-spark-review-the-gb10-machine-is-so-freaking-cool/4/
+- https://videocardz.com/newz/nvidia-officially-raises-dgx-spark-founders-edition-msrp-to-4699
+- https://www.exxactcorp.com/blog/deep-learning/what-you-need-to-build-a-4x-nvidia-dgx-spark-cluster-switch-cabling-power
+- https://inferencex.semianalysis.com/inference/qwen-3-8-flash-next
