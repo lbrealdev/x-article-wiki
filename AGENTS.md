@@ -76,7 +76,7 @@ Do not invent claims, references, or actionables that are not supported by the s
   - **Summary** — fill Source URL and note path
   - **Motivation** — optional; only when it adds useful context
   - **Checklist** — mark items honestly (`[x]` only when true; leave unchecked when not applicable or unmet)
-- Do **not** put meta or agent chatter in the PR body (e.g. “Diff is limited to the new note file.”)
+- Do **not** put meta or agent chatter in the PR body — only what the template asks for.
 - Keep the diff limited to the note file(s) plus any unavoidable metadata
 - If extraction fails mid-work, close out without committing invented content
 
