@@ -72,6 +72,7 @@ Do not invent claims, references, or actionables that are not supported by the s
 
 - One PR per note when practical (small related batches are OK)
 - Title follows Conventional Commits (see below)
+- PRs must be **ready for review** (not draft). After creating the PR, mark it ready if the platform opened it as draft.
 - **Body must follow** [`.github/PULL_REQUEST_TEMPLATE.md`](.github/PULL_REQUEST_TEMPLATE.md):
   - **Summary** — fill Source URL and note path
   - **Motivation** — optional; only when it adds useful context
