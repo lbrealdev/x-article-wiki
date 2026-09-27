@@ -75,7 +75,9 @@ Do not invent claims, references, or actionables that are not supported by the s
 - PRs must be **ready for review** (not draft). After creating the PR, mark it ready if the platform opened it as draft.
   <!-- Cursor cloud agents often open PRs as draft by default; mark ready before you stop. -->
 - **Body must follow** [`.github/PULL_REQUEST_TEMPLATE.md`](.github/PULL_REQUEST_TEMPLATE.md):
-  - **Summary** — fill Source URL and note path
+  - **Summary** —
+    - Note PRs (`docs(article)` / `docs(thread)`): use `Source:` and `Note:`
+    - Otherwise (`docs(contract)`, `chore`, …): write a short free summary; do not invent Source or Note
   - **Motivation** — optional; only when it adds useful context
   - **Checklist** — mark items honestly (`[x]` only when true; leave unchecked when not applicable or unmet)
 - Do **not** put meta or agent chatter in the PR body — only what the template asks for.

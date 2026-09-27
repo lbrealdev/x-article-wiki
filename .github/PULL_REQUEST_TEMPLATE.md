@@ -1,5 +1,8 @@
 ## Summary
 
+<!-- Note PRs (docs(article|thread)): fill Source and Note below.
+     Other PRs (docs(contract), chore, …): delete Source/Note lines and write a short free summary instead. Do not invent Source or N/A. -->
+
 - Source: <!-- https://x.com/i/article/... or status URL -->
 - Note: <!-- notes/YYYY-MM-DD-short-slug.md (new or update) -->
 
