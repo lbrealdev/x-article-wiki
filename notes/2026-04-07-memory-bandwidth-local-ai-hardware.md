@@ -71,10 +71,4 @@ Closing blunt map: NVIDIA → fastest raw speed; Apple Ultra → biggest one-box
 
 ## References
 
-### X source
-
-- https://x.com/TheAhmadOsman/status/2041331757329285589
-
-### Other
-
-- https://t.co/N82tPAjljI
+N/A
