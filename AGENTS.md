@@ -43,19 +43,21 @@ Use `notes/_template.md` as the structure. Every committed note must include the
 
 1. **Source** — single section with:
    - **Author** — X username of the post/article author (`@handle`)
-   - **Article/Post** — canonical X URL (primary attribution)
+   - **Article/Post** — canonical X URL (primary attribution). When both a status/share URL and an X article URL exist, this **must** be the `https://x.com/i/article/...` URL
+   - **Status** — optional; the status/share URL (`https://x.com/.../status/...`) when it differs from Article/Post
    - **Date** — publication or extraction date (`YYYY-MM-DD`)
    - **Title** — title of the article/thread
 2. **Long summary** — faithful overview of the source
 3. **Key claims** — bullet list of the main points asserted
-4. **Links** — URLs referenced in the source (if any)
-5. **Actionables** — concrete follow-ups implied by the source (if any)
+4. **References** — URLs from or about the source, kept and grouped when documenting expected shape (e.g. X source / Docs / GitHub / HF / Other). Do not drop referenced URLs.
+5. **Actionables** — concrete, source-derived follow-ups for a general reader (or `N/A`). Do not personalize for a named person.
 
-Do not invent claims, links, or actionables that are not supported by the source.
+Do not invent claims, references, or actionables that are not supported by the source.
 
 ## Content rules
 
 - Summarize; do not paste the full source verbatim unless needed for a short quote
+- **Exactness:** copy names, numbers, and product/model labels exactly as in the source; do not substitute newer or guessed names
 - No PII, credentials, API keys, session tokens, or private account details
 - Stay faithful to the source; mark uncertainty instead of fabricating detail
 
