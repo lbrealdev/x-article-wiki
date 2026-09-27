@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Report a problem with a note, the contract, or wiki tooling
+about: Report a problem with a note or the contract in AGENTS.md
 title: "[bug] "
 labels: bug
 ---
@@ -11,7 +11,7 @@ What is wrong?
 
 ## Where
 
-- Note path or page (if any): `notes/...`
+- Note path (if any): `notes/...`
 - Related source URL (if any):
 
 ## Expected
@@ -24,4 +24,4 @@ What happens or appears instead?
 
 ## Context
 
-Anything useful for a knowledge wiki (and a future HTML gallery): browser, render path, or steps to reproduce.
+Anything useful for the markdown notes under `notes/` (one note per X article or thread; contract in `AGENTS.md`).
